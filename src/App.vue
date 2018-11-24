@@ -1,28 +1,56 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div id="app">
+  <el-container>
+    <el-header id="head-navi">
+      <Navi/>
+    </el-header>
+    <el-main>
+      <router-view/>
+    </el-main>
+    <el-footer height="200px">
+      <Footer/>
+    </el-footer>
+  </el-container>
+</div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Navi from './components/Navi.vue'
+import Footer from './components/Footer.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Navi,
+    Footer
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#head-navi {
+  padding: 0px 0px;
+}
+
+.el-footer {
+  background-color: #E9EEF3;
+  color: #333;
+}
+
+.el-main {
+  background-color: #f7fbfd;
+  color: #333;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  line-height: 600px;
+}
+
+body>.el-container {
+  margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
 }
 </style>
