@@ -4,10 +4,14 @@
     <el-menu-item index="1">
       <router-link to="/" tag="li">主页</router-link>
     </el-menu-item>
-    <el-menu-item index="2">推荐</el-menu-item>
-    <el-menu-item index="3">共创</el-menu-item>
+    <el-menu-item index="2">
+      <router-link to="/recommand" tag="li">推荐</router-link>
+    </el-menu-item>
+    <el-menu-item index="3">
+      <router-link to="/collaboration" tag="li">共创</router-link>
+    </el-menu-item>
     <el-menu-item index="4">
-      <router-link to="/about" tag="li">教学</router-link>
+      <router-link to="/course" tag="li">教学</router-link>
     </el-menu-item>
 
   </el-menu>

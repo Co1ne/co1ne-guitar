@@ -37,8 +37,6 @@ export default {
 .el-main {
   background-color: #f7fbfd;
   color: #333;
-  text-align: center;
-  line-height: 600px;
 }
 
 body>.el-container {
